@@ -16,7 +16,7 @@ projects_load = false;
 t_wait = 800;
 
 window.onload = function(){
-	$( ".faded" ).animate({marginTop: '-=20px'}, 0);
+	$( ".faded" ).not('.no-slide').animate({marginTop: '-=20px'}, 0);
 	$( ".profilepic" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 		$( ".banner-right" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 			$( ".smallintro" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
@@ -61,7 +61,7 @@ window.onload = function(){
 					$( ".projects-desc" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 						$( ".project-item" ).each(function(i){
 							delay=(i)*400
-							$(this).delay(delay).animate({marginTop: '+=20px', opacity: 1}, t_wait)
+							$(this).delay(delay).animate({opacity: 1}, t_wait)
 						});
 					});
 
