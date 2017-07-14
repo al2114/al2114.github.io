@@ -3629,11 +3629,11 @@ a.callbacks_nav.callbacks1_nav.prev {
 }
 
 .project-item:nth-child(1) .project-desc-container {
-  background: url(../images/project-1.jpg) no-repeat -50px 0px;
+  background: url(../images/project-1.jpg) no-repeat 0px 0px;
 }
 
 .project-item:nth-child(1) .project-desc:hover .project-desc-container {
-  background: url(../images/project-1h.jpg) no-repeat -50px 0px;
+  background: url(../images/project-1h.jpg) no-repeat 0px 0px;
   -webkit-backface-visibility: hidden;
 }
 
@@ -3698,3 +3698,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 .project-desc:hover p {
   opacity: 1;
 }
+
+.faded {
+  opacity: 0;
+  }

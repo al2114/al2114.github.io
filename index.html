@@ -21,6 +21,7 @@
 	<!-- start-smooth-scrolling -->
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -67,8 +68,8 @@
 					</div> 
 				</div>       	  
 			</div>
-			<!---start-click-drop-down-menu----->
-			        <!----start-dropdown--->
+			<!-- start-click-drop-down-menu -->
+			        <!-- start-dropdown --->
 			         <script type="text/javascript">
 						var $ = jQuery.noConflict();
 							$(function() {
@@ -90,18 +91,18 @@
 												
 						});
 					</script>
-			<!---//End-click-drop-down-menu----->
+			<!---//End-click-drop-down-menu-->
 			<div class="clearfix"> </div>
 		</div>
 		<div class="banner-info">
 			<div class="banner-left">
-				<img src="images/1.png" alt=""/>
+				<img class="profilepic faded" src="images/1.png" alt=""/>
 			</div>
-			<div class="banner-right">
+			<div class="banner-right faded">
 				<h1>HI, I'M ANDREW!</h1>
 				<div class="border"></div>
-				<h2>I am currently a 4th year student studying<br> Electronic and Information Engineering<br> at Imperial College London.</h2>
-				<a href="andrewli-cv.pdf">DOWNLOAD MY RESUME</a>
+				<h2 class="smallintro faded">I am currently a 4th year student studying<br> Electronic and Information Engineering<br> at Imperial College London.</h2>
+				<a class="topcv faded" href="andrewli-cv.pdf">DOWNLOAD MY RESUME</a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -113,17 +114,17 @@
 <div class="about text-center" id="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5 about-title">
+			<div class="col-md-5 about-title faded">
 				<h3>ABOUT ME</h3>
 				<div class="strip text-center"><img src="images/about.png" alt=" "/></div>
 			</div>
-			<div class="col-md-7">
-				<p>I am an engineering student and avid techie. Born in Montreal, Canada, I grew up with a very international background having also lived in the San Francisco Bay Area and Beijing before moving to London to study at Imperial College London. With this, I am lucky to be able to have a network which spans the globe.</p>
-				<p>I am deeply passionate about everything that’s happening in the tech world! I am often found lost in discussion talking to my peers and colleagues about the impact of technology, what the future may look like, and the socialogical implications of technology. I am especially interested in the human-centric side of technology and its sociological effects.</p>
-				<p>Throughout my studies, I always strive to develop the skills required for the world of tomorrow, taking interest in courses such as <strong>machine learning, computer vision &amp pattern recognition, user-centered information systems, and human-centered robotics</strong>. I also aim to apply these skills by working on various group and personal projects in my spare time.</p>
-				<p>As an engineer, the phrase “knowledge is power” holds very true to my belief, as with knowledge, we are truly empowered by transforming abstract concepts and ideas into tangible reality. I believe that the endeavour of human ingenuity is something that holds true beauty, and aim to make use of my knowledge and experience to take part in shaping our fascinating world.</p>
-				<p>Interested in hiring me? Take a look at some of my work and experience bellow!</p>
-				<ul>
+			<div class="col-md-7 about-text">
+				<p class="faded">I am an engineering student and avid techie. Born in Montreal, Canada, I grew up with a very international background having also lived in the San Francisco Bay Area and Beijing before moving to London to study at Imperial College London. With this, I am lucky to be able to have a network which spans the globe.</p>
+				<p class="faded">I am deeply passionate about everything that’s happening in the tech world! I am often found lost in discussion talking to my peers and colleagues about the impact of technology, what the future may look like, and the socialogical implications of technology. I am especially interested in the human-centric side of technology and its sociological effects.</p>
+				<p class="faded">Throughout my studies, I always strive to develop the skills required for the world of tomorrow, taking interest in courses such as <strong>machine learning, computer vision &amp pattern recognition, user-centered information systems, and human-centered robotics</strong>. I also aim to apply these skills by working on various group and personal projects in my spare time.</p>
+				<p class="faded">As an engineer, the phrase “knowledge is power” holds very true to my belief, as with knowledge, we are truly empowered by transforming abstract concepts and ideas into tangible reality. I believe that the endeavour of human ingenuity is something that holds true beauty, and aim to make use of my knowledge and experience to take part in shaping our fascinating world.</p>
+				<p class="faded">Interested in hiring me? Take a look at some of my work and experience bellow!</p>
+				<ul class="socialmedia faded">
 					<li><a class="fb" href="https://www.facebook.com/andrewliyw"></a></li>
 					<li><a class="gh" href="https://github.com/al2114/"></a></li>
 					<li><a class="in" href="https://www.linkedin.com/in/andrew-li-2b372710b/"></a></li>
@@ -142,15 +143,15 @@
 <!--work-->
 <div class="gallery-section text-center" id="career">
 	<div class="container">
-		<div class="work-info">
+		<div class="work-info faded">
 			<h3>WORK EXPERIENCE</h3>
+			<div class="strip text-center"><img src="images/work.png" alt=" "/></div>
 		</div>
-		<div class="strip text-center"><img src="images/work.png" alt=" "/></div>
 		<div class="work-grids">
 			<!-- <div class="row"> -->
 				<div class="col-md-1 col-lg-1"><p></p></div>
 				<div class="col-md-5 col-lg-5">
-					<div class="work-grid">
+					<div class="work-grid faded">
 						<h3>2016 Summer</h3>
 						<div class="work-grid-info">
 							<a href="http://borqs.com/">
@@ -165,7 +166,7 @@
 					</div>
 				</div>
 				<div class="col-md-5 col-lg-5">
-					<div class="work-grid">
+					<div class="work-grid faded">
 						<h3>2017 Summer</h3>
 						<div class="work-grid-info">
 							<a href="http://en.cloudminds.com/">
@@ -189,13 +190,16 @@
 <!--portfolio-->
 <div class="work-experience text-center" id="projects">
 	<div class="container">
-		<h3>PROJECTS</h3>
-		<div class="strip text-center"><img src="images/port.png" alt=" "/></div>
-		<p>Bellow are some of my current and past projects I've worked on either as part of my course of studies, or in my own spare time. Hover over the images for slightly more detailed descriptions of each project. If you're interested in or would like to learn more about any of these works, feel free to contact me and I'd be happy to speak with you!</p>
+		<div class="projects-title faded">
+			<h3>PROJECTS</h3>
+			<div class="strip text-center"><img src="images/port.png" alt=" "/></div>
+		</div>
+
+		<p class="projects-desc faded">Bellow are some of my current and past projects I've worked on either as part of my course of studies, or in my own spare time. Hover over the images for slightly more detailed descriptions of each project. If you're interested in or would like to learn more about any of these works, feel free to contact me and I'd be happy to speak with you!</p>
 	</div>
 	<!-- <div class="projectlist container"> -->
 	<div class="project-list">
-		<div class="project-item">
+		<div class="project-item faded">
 			<div class="container">
 				<div class="col-md-5 project-title">
 					<h3>Luko.hi</h3>
@@ -211,7 +215,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-item">
+		<div class="project-item faded">
 			<div class="container">
 				<div class="col-md-7 project-desc">
 					<div class="project-desc-container">
@@ -227,7 +231,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-item">
+		<div class="project-item faded">
 			<div class="container">
 				<div class="col-md-5 project-title">
 					<h3>Eurobot 2017</h3>
@@ -238,7 +242,7 @@
 					<div class="project-desc-container">
 						<p style="font-size: 14px; color: #121212; padding:0px 15px 0px 15px">
 
-							I took part in this year's Eurobot competition as a member of the Imperial College Robotic Society team. Eurobot is an annual competition where teams from universities across Europe build robots to compete autonomously against each other in a task-based arena, with points award for completing different tasks within the arena's boundaries. This year, the competition's theme was Moon Village, and the primary task involved gathering and collecting various "lunar objects" within the provided time limit. We decided to challenge ourselves by creating an omnidirectional robot using three omni wheels. The robot utilises a combination of RaspberryPis, Arduinos, and mbeds to drive its various functions including motor control, arm control, localisation, path planning and collision detection. Our robot uses odometry data, computer vision triangulation (using chilitag beacons) and kalman filtering to provide localisation information, which it makes use of to navigate throughout the arena. Utilising a three-wheel omnidirectional drive proved to be challenging, and even after a lot of effort put into tuning motor controllers, still resulted in suboptimal motion when compared to many of the other robots. Nonetheless, using three-wheeled omnidirectional drive had never been seen before on the competition, and our implementation garnered quite a decent amount of interest during the event.
+							I participated in this year's Eurobot competition as a member of the Imperial College Robotic Society team. Eurobot is an annual competition where teams from universities across Europe build robots to compete autonomously against each other by completing tasks and scoring points in a time-limited arena environment. This year, the competition's theme was Moon Village, and the primary task involved gathering and collecting various "lunar objects" within the provided time limit. We decided to challenge ourselves by creating an omnidirectional robot using three omni wheels. The robot utilises a combination of RaspberryPis, Arduinos, and mbeds to drive its various functions including motor control, arm control, localisation, path planning and collision detection. Our robot uses odometry data, computer vision triangulation (using chilitag beacons) and kalman filtering to provide localisation information, which it makes use of to navigate throughout the arena. Utilising a three-wheel omnidirectional drive proved to be challenging, and even after a lot of effort put into tuning motor controllers, still resulted in suboptimal motion when compared to many of the other robots. Nonetheless, using three-wheeled omnidirectional drive had never been seen before on the competition, and our implementation garnered quite a decent amount of interest during the event.
 
 						</p>
 					</div>
@@ -246,7 +250,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-item">
+		<div class="project-item faded">
 			<div class="container">
 				<div class="col-md-7 project-desc">
 					<div class="project-desc-container">
@@ -262,7 +266,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-item">
+		<div class="project-item faded">
 			<div class="container">
 				<div class="col-md-5 project-title">
 					<h3>Ephemeral</h3>
@@ -272,13 +276,13 @@
 				<div class="col-md-7 project-desc">
 					<div class="project-desc-container">
 						<p style="font-size: 14px; color: #121212; padding:60px 15px 0px 15px">
-							The Plantarium Nova is a temperature and humidity controlled capsule designed for home plant growing and monitoring developed by Team Icarus. The device runs on a ESP8266 WiFi module and interfaces with a series of sensors including LED lights, a temperature sensor, a humidity sensor, a humidifier, and a temperature regulator. This allows for the device to create a closed loop control system to regulate the capsule and provide the optimal climate profile for a given plant. Additionally, the device connects to an MQTT broker which allows for it to communicate with our backend system, enabling IoT functionality. A front-end control panel interface was developed using the D3.js framework to graphically visualise the sensor readings in real time, with the side panel enabling users to create profiles for different temperature/humidity settings. I was primarily responsible for the development of the web control interface and backend system.
+							Ephemeral is an app that a few friends and I had worked on during IC Hack 2017. It is a textmessaging platform trying to emulate the way individuals communicate in spoken conversation, where information is streamlined and words are temporary. As such, your message begins appearing on your correspondent's screen as soon as you begin your first keystroke, and subsequently the message will begin to disappear as soon as the full message has been delivered and read. The aim is to create a messaging platform that will allow for more genuine conversations to take place between individual, with the added benefit of privacy offered by typing your conversation (i.e. in public spaces). We also took this as a learning opportunity, and set ourselves the constraint of developing the entire platform using just Swift, utilising Perfect, a server-side Swift framework to develop our app's backend.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="project-item">
+		<div class="project-item faded">
 			<div class="container">
 				<div class="col-md-7 project-desc">
 					<div class="project-desc-container">
@@ -288,7 +292,7 @@
 					</div>
 				</div>
 				<div class="col-md-5 project-title">
-					<h3>FPGA Object Mapping</h3>
+					<h3>FPGA Object Detection</h3>
 					<hr style="border-top: 1px solid #8c8b8b; width: 70%; margin-bottom: -20px; margin-top: 30px;">
 					<p>Method of detecting object using colour-space mapping</p>
 				</div>
@@ -373,6 +377,12 @@
 								
 			});
 	</script>
+
 <!-- //here ends scrolling icon -->
 </body>
+
+	<script type="text/javascript" src="js/fade-elements.js"></script>
+
+
 </html>
+
