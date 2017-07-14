@@ -30,7 +30,7 @@ window.onload = function(){
 				$( ".about-title" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 
 					$( ".about-text p" ).each(function(i){
-						delay=(i)*t_wait
+						delay=(i)*250
 						$(this).delay(delay).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 							if(i==4){
 								$(".socialmedia").animate({marginTop: '+=20px', opacity: 1}, t_wait)
@@ -60,7 +60,7 @@ window.onload = function(){
 				$( ".projects-title" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 					$( ".projects-desc" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 						$( ".project-item" ).each(function(i){
-							delay=(i)*t_wait
+							delay=(i)*250
 							$(this).delay(delay).animate({marginTop: '+=20px', opacity: 1}, t_wait)
 						});
 					});
