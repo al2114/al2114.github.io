@@ -13,7 +13,7 @@
 about_load = false;
 career_load = false;
 projects_load = false;
-t_wait = 1000;
+t_wait = 800;
 
 window.onload = function(){
 	$( ".faded" ).animate({marginTop: '-=20px'}, 0);
@@ -30,7 +30,7 @@ window.onload = function(){
 				$( ".about-title" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 
 					$( ".about-text p" ).each(function(i){
-						delay=(i)*250
+						delay=(i)*400
 						$(this).delay(delay).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 							if(i==4){
 								$(".socialmedia").animate({marginTop: '+=20px', opacity: 1}, t_wait)
@@ -60,7 +60,7 @@ window.onload = function(){
 				$( ".projects-title" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 					$( ".projects-desc" ).animate({marginTop: '+=20px', opacity: 1}, t_wait, function(){
 						$( ".project-item" ).each(function(i){
-							delay=(i)*250
+							delay=(i)*400
 							$(this).delay(delay).animate({marginTop: '+=20px', opacity: 1}, t_wait)
 						});
 					});
